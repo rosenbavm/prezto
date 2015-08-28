@@ -23,7 +23,7 @@ version is 4.3.17.
      provided:
 
         setopt EXTENDED_GLOB
-        for rcfile in ".zprezto/runcoms/^README.md(.N); do
+        for rcfile in .zprezto/runcoms/^README.md(.N); do
           ln -s "$rcfile" ".${rcfile:t}"
         done
 
