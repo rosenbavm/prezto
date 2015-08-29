@@ -16,7 +16,6 @@
 # 13 bright magenta
 # 14 bright cyan
 # 15 bright white
-#
 
 # Load dependencies.
 pmodload 'helper'
@@ -129,9 +128,8 @@ function prompt_custom_preview {
   local +h PROMPT=''
   local +h RPROMPT=''
   local +h SPROMPT=''
-
   editor-info 2>/dev/null
-  prompt_preview_theme 'sorin'
+  prompt_preview_theme 'custom'
 }
 
 prompt_custom_setup "$@"
