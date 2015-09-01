@@ -2,4 +2,4 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 bindkey "^n" history-beginning-search-backward
-alias ncmpcpp-htpc='ncmpcpp --host=192.168.1.30'
+alias ncmpcpp-htpc='ncmpcpp --host=192.168.1.10'
