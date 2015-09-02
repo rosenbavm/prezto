@@ -29,9 +29,9 @@ if [[ -z "$TMUX" && -z "$EMACS" && -z "$VIM" ]] && ( \
 ); then
   tmux start-server
 
-  # Create a 'prezto' session if no session has been defined in tmux.conf.
+  # Create a session if no session has been defined in tmux.conf.
   if ! tmux has-session 2> /dev/null; then
-    tmux_session='prezto'
+    tmux_session='ssh'
     tmux \
       new-session -d -s "$tmux_session" \; \
       set-option -t "$tmux_session" destroy-unattached off &> /dev/null
